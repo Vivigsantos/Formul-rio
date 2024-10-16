@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de contato</title>
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">Queremos te conhecer!</h1>
+        <p id="subtitulo">Conte-nos mais sobre você e sua relação com a música:</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label><strong>É a sua primeira vez em nosso site?</strong></label>
+            <label>
+                <input type="radio" name="acesso" value="sim">Sim
+            </label>
+            <label>
+                <input type="radio" name="acesso" value="nao">Não
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="idade"><strong>Qual a sua faixa etária?</strong></label>
+            <select id="idade" name="idade">
+                <option selected disabled value="">Selecione</option>
+                <option>18 a 25</option>
+                <option>26 a 35</option>
+                <option>36 a 45</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label><strong>Qual seu instrumento de interesse?</strong></label><br><br>
+                <input type="checkbox" name="instrumento" id="guitarra" value="Guitarra">
+                <label for="guitarra">Guitarra</label>
+                <input type="checkbox" name="instrumento" id="teclado" value="Teclado">
+                <label for="teclado">Teclado</label>
+                <input type="checkbox" name="instrumento" id="violao" value="Violão">
+                <label for="violao">Violão</label>
+                <input type="checkbox" name="instrumento" id="violino" value="Violino">
+                <label for="violino">Violino</label>
+                <input type="checkbox" name="instrumento" id="bateria" value="Bateria">
+                <label for="bateria">Bateria</label>
+                <input type="checkbox" name="instrumento" id="baixo" value="Baixo">
+                <label for="baixo">Baixo</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Conte-nos um pouco mais sobre você e suas experiências musicais:</strong></label>
+            <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+    </form>
+</body>
+</html>
